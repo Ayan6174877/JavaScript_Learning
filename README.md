@@ -1,2 +1,2 @@
 # JavaScript_Learning
-A repository consist of javaScript programs and projects
+A repository consists of javaScript programs and projects
