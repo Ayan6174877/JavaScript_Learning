@@ -1,0 +1,75 @@
+body{
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 1.7em;
+}
+
+.align-center{
+    display: flex;;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.name-input{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border:solid;
+    border-width: 2px;
+    border-color: transparent transparent darkblue transparent;
+    font-size: 22px;
+    outline: none;
+}
+
+.instructuions{
+    width: 100%;
+    padding: 0;margin: 0;
+}
+
+.instructuions li{
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+#section_1{
+    transition: 1s;
+}
+
+#section_2, #section_3, #section_4, #section_5 {
+    display: none;
+    transition: all 1s;
+}
+
+.timer{
+    font-size: 52px;
+    font-weight: 800;
+    width: 100%;
+}
+
+.question{
+    font-weight: 600;
+}
+
+.options{
+    padding: 0;margin: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.options li{
+    padding: 20px;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: 0.50s;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.options li:hover{
+    background-color: whitesmoke;
+}

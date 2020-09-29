@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+       
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- icons -->
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  
+<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="align-center">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- section 1 -->
+                 <div id="section_1" class="text-center">
+                      <h1>
+                          Hello, Good to see you here
+                      </h3>
+                      <h4>
+                          It's a quiz app build in vanilla JavaScript and pure HTML and CSS. 
+                           click on the button below to continue with the test.
+                      </h4>
+                      <br>
+                      <button onclick="show_Section2(section_1,section_2)" class="btn btn-lg btn-primary">
+                          Let's get started
+                      </button>
+                  </div>
+                  <!-- end of section 1 -->
+
+
+                    <!-- section 2 -->
+                    <div id="section_2" class="text-center">
+                        <h1>
+                            Help us to know you a bit better
+                        </h3>
+                        <h4>
+                           Fill in the details in the form before start taking the test and hit enter
+                        </h4>
+                        <br>
+                       <input id="username" type="text" class="name-input" placeholder="What's your name?" />
+                    </div>
+                    <!-- end of section 2 -->
+                    
+                    <!-- section 3 -->
+                    <div id="section_3">
+                        <h1>
+                           instructuions
+                        </h3>
+                        <h4>
+                          PLease read all the Instructions carefully before continuing with the test.
+                        </h4>
+                        <ol class="instructuions">
+                            <li>
+                                There will be 10 questions. Each questions are related to basic HTML, CSS and Javascript.
+                            </li>
+                            <li>
+                                Every question will contain 4 options, out of which only one answer would be correct.
+                                You need to pick the correct one
+                            </li>
+                            <li>
+                                For every correct answer you will get 20 points.
+                            </li>
+                            <li>
+                                For every wrong answer there will be a deduction of -5 points
+                            </li>
+                            <li>
+                                You will get 30 seconds to answer each question. Once you will answer the question you will be redirected to the next questions.
+                            </li>
+                            <li>
+                                You can always skip a question anytime and go back to answer the question when you feel like answering it
+                            </li>
+                        </ol>
+                        <p>
+                            <strong>
+                                We highly recommend you provide complete attention to the test. The passing marks for the test is 120 out of 200.
+                            </strong>
+                        </p>
+                        <br>
+                        <button class="btn btn-md btn-primary" onclick="startTest()">Let's begin the test</button>
+                    </div>
+                    <!-- end of section 3 -->
+
+
+                      <!-- section 4  - Test sections -->
+                      <!--  -->
+                      <div id="section_4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <h1 class="timer text-center"> </h1>
+                                </div>
+                                <br>
+                                <div>
+                                    <h4 class="question">
+                                    </h3>
+                                </div>
+                                <ul class="options"></ul>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- end of section 4 -->
+
+                       <!-- result section  -->
+                       <div id="section_5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <h1 text-center">
+                                        Thank you for taking the test <span id="name"></span>
+                                     </h1>
+                                     <br>
+                                     <h3>
+                                         Total Score - <span id="total_score"></span> / 200
+                                     </h3>
+                                     <h4>
+                                        Right answer - <span id="right_answer" ></span>
+                                     </h4>
+                                     <h4>
+                                        wWrong answer - <span id="wrong_answer" ></span>
+                                     </h4>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- end of section 4 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="index.js" type="text/JavaScript" />
+    </body>
+</html>
